@@ -1,2 +1,6 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+    import '../app.css' 
+    import { isOverlayOpen } from '../stores/overlay-store'
+</script>
+
+<button class="bg-purple-800 text-white py-2 px-6 rounded-md" on:click={() => isOverlayOpen.set(true)}>Open</button>
